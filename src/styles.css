@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Main;
+    src: url('/assets/fonts/PathwayExtreme-VariableFont_opsz\,wdth\,wght.ttf');
+}
+@font-face {
+    font-family: MainItallic;
+    src: url('/assets/fonts/PathwayExtreme-Italic-VariableFont_opsz\,wdth\,wght.ttf');
+}
+
+body{
+    font-family: Main;
+}
