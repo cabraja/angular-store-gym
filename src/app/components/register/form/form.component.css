@@ -1,0 +1,15 @@
+@keyframes alert {
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.alert-animation{
+    animation: alert 1s ease-in-out forwards;
+
+}

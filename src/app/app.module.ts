@@ -11,13 +11,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/products/product/product.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { CarouselComponent } from './components/product-page/carousel/carousel.component';
-
-// BOOSTRAP NGX
-import {CarouselModule} from 'ngx-bootstrap/carousel';
 import { CartComponent } from './components/cart/cart.component';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 import { FormComponent } from './components/register/form/form.component';
 import { RegisterComponent } from './components/register/register.component';
+import { FooterComponent } from './components/footer/footer.component';
+// BOOSTRAP NGX
+import {CarouselModule} from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { RegisterComponent } from './components/register/register.component';
     CartComponent,
     CartItemComponent,
     FormComponent,
-    RegisterComponent
+    RegisterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

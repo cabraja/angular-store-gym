@@ -12,7 +12,7 @@ import { User } from 'src/app/interfaces/User';
 export class FormComponent implements OnInit{
 
   countries: Country[] = [];
-
+  registerStatus: boolean= false;
   user:FormGroup;
 
 constructor(private countryService:CountryService,private fb:FormBuilder){}
@@ -34,7 +34,9 @@ constructor(private countryService:CountryService,private fb:FormBuilder){}
   }
 
   onSubmit(form:FormGroup):void{
-    console.log(form.valid);
+    if(form.valid){
+      this.registerStatus = true;
+    }
     
   }
   

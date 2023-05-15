@@ -1,4 +1,13 @@
 <form class="row g-3" [formGroup]="user" (ngSubmit)="onSubmit(user)">
+  <!-- ALERT -->
+  <div
+    class="alert alert-info alert-animation"
+    role="alert"
+    *ngIf="registerStatus"
+  >
+    You have subscribed successfuly!
+  </div>
+
   <!-- NICKNAME -->
   <div class="col-md-6">
     <label for="tbNickname" class="form-label">Nickname</label>
@@ -130,6 +139,8 @@
   </div>
 
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Subrscribe</button>
+    <button type="submit" [disabled]="!user.valid" class="btn btn-primary">
+      Subrscribe
+    </button>
   </div>
 </form>
