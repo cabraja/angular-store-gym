@@ -1,0 +1,22 @@
+<div class="rounded bodred border mb-3 cart-item">
+  <div
+    class="cart-item-inner justify-content-center align-items-center"
+    (click)="onDelete(item)"
+  >
+    <p class="mb-0 fs-5 fw-bold">Remove From Cart</p>
+  </div>
+  <div class="row px-5 py-4">
+    <div
+      class="col-9 d-flex flex-column justify-content-center align-items-start"
+    >
+      <div class="d-flex flex-column">
+        <h6>{{ item.name }}</h6>
+        <p class="mb-0">{{ item.price }} $</p>
+      </div>
+    </div>
+
+    <div class="col-3 d-flex justify-content-end">
+      <img src="{{ item.images[0] }}" height="70px" />
+    </div>
+  </div>
+</div>

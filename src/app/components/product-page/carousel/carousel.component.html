@@ -1,0 +1,5 @@
+<carousel [(activeSlide)]="activeSlideIndex" [isAnimated]="true">
+  <slide *ngFor="let image of images; let index = index">
+    <img [src]="image" alt="image slide" style="display: block; width: 100%" />
+  </slide>
+</carousel>

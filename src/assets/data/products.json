@@ -5,7 +5,6 @@
         "price": 1099.99,
         "images": [
           "https://thefitnessstore.com/cdn/shop/products/Stride7s1_540x.jpg?v=1668134250",
-          "https://thefitnessstore.com/cdn/shop/products/Stride7s1_540x.jpg?v=1668134250",
           "https://thefitnessstore.com/cdn/shop/products/Stride7s5_540x.jpg?v=1668134250"
         ],
         "discountPercent": 5,
@@ -31,8 +30,9 @@
         "name": "Weight Bench",
         "price": 399.99,
         "images": [
-          "https://thefitnessstore.com/cdn/shop/products/5.1s_bench_540x.jpg?v=1571712036",
-          "https://thefitnessstore.com/cdn/shop/products/5.1s_bench_540x.jpg?v=1571712036"
+          "https://thefitnessstore.com/cdn/shop/products/f704a.progressive.jpg?v=1677189700",
+          "https://thefitnessstore.com/cdn/shop/products/f704b_540x.jpg?v=1677189700",
+          "https://thefitnessstore.com/cdn/shop/products/f704.progressive.jpg?v=1677189698"
         ],
         "discountPercent": 0,
         "description": "This sturdy weight bench is essential for any home gym. With adjustable incline and decline, it's perfect for a wide range of exercises, from bench presses to leg curls.",
@@ -71,7 +71,8 @@
         "price": 49.99,
         "images": [
           "https://thefitnessstore.com/cdn/shop/products/Power-Cage-F45L@2x.jpg?v=1613168526",
-          "https://thefitnessstore.com/cdn/shop/products/Power-Cage-F45L_540x.jpg?v=1613168526"
+          "https://thefitnessstore.com/cdn/shop/products/Power-Cage-F45R.progressive.jpg?v=1613168526",
+          "https://thefitnessstore.com/cdn/shop/products/Power-Cage-Front.progressive.jpg?v=1613168527"
         ],
         "discountPercent": 10,
         "description": "This sturdy pull-up bar is easy to install in any doorway, providing a convenient way to work your upper body muscles at home.",
@@ -84,7 +85,7 @@
         "price": 19.99,
         "images": [
           "https://thefitnessstore.com/cdn/shop/products/BSTJR1@2x.jpg?v=1611596772",
-          "https://thefitnessstore.com/cdn/shop/products/BSTJR1_540x.jpg?v=1611596772"
+          "https://thefitnessstore.com/cdn/shop/products/ZZR184VSR_1_1024x1024_b6b9f1fe-be50-4ef0-9df5-3d1944e790a4.progressive.jpg?v=1611597548"
         ],
         "discountPercent": 0,
         "description": "This high-quality jump rope is perfect for a quick and effective cardio workout at home or on the go.",
@@ -97,8 +98,8 @@
         "price": 29.99,
         "images": [
           "https://thefitnessstore.com/cdn/shop/products/8811-27_360x_d8a470dd-8da1-4c43-9f5d-6c543020ca8e@2x.jpg?v=1571712047",
-          "https://thefitnessstore.com/cdn/shop/products/8811-27_360x_d8a470dd-8da1-4c43-9f5d-6c543020ca8e_540x.jpg?v=1571712047",
-          "https://thefitnessstore.com/cdn/shop/products/8811-27_360x_d8a470dd-8da1-4c43-9f5d-6c543020ca8e_540x.jpg?v=1571712047"
+          "https://thefitnessstore.com/cdn/shop/products/8812-32_720x_52c7c242-c30c-46ee-b63b-5de2c480556d.progressive.jpg?v=1571712047",
+          "https://thefitnessstore.com/cdn/shop/products/8813-04_360x_e53f036c-4e97-49f2-924e-084290ef81bd.progressive.jpg?v=1571712047"
         ],
         "discountPercent": 15,
         "description": "These versatile resistance bands provide a full-body workout without the need for heavy equipment. With different levels of resistance, they're suitable for users of all fitness levels.",

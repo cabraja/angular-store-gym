@@ -1,0 +1,135 @@
+<form class="row g-3" [formGroup]="user" (ngSubmit)="onSubmit(user)">
+  <!-- NICKNAME -->
+  <div class="col-md-6">
+    <label for="tbNickname" class="form-label">Nickname</label>
+    <input
+      type="text"
+      class="form-control"
+      id="tbNickname"
+      formControlName="nickname"
+    />
+    <small
+      *ngIf="
+        user.controls['nickname'].invalid && user.controls['nickname'].touched
+      "
+      class="text-danger"
+      >Invalid nickname.</small
+    >
+  </div>
+
+  <!-- EMAIL -->
+  <div class="col-md-6">
+    <label for="tbEmail" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="tbEmail"
+      formControlName="email"
+    />
+    <small
+      *ngIf="user.controls['email'].invalid && user.controls['email'].touched"
+      class="text-danger"
+      >Invalid email.</small
+    >
+  </div>
+
+  <!-- FIRST NAME -->
+  <div class="col-md-6">
+    <label for="tbFirstName" class="form-label">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="tbFirstName"
+      formControlName="firstName"
+    />
+    <small
+      *ngIf="
+        user.controls['firstName'].invalid && user.controls['firstName'].touched
+      "
+      class="text-danger"
+      >Invalid first name.</small
+    >
+  </div>
+
+  <!-- LAST NAME -->
+  <div class="col-md-6">
+    <label for="tbLastName" class="form-label">Last Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="tbLastName"
+      formControlName="lastName"
+    />
+    <small
+      *ngIf="
+        user.controls['lastName'].invalid && user.controls['lastName'].touched
+      "
+      class="text-danger"
+      >Invalid last name.</small
+    >
+  </div>
+
+  <!-- CITY -->
+  <div class="col-md-5">
+    <label for="tbCity" class="form-label">City / Town</label>
+    <input
+      id="tbCity"
+      class="form-control"
+      type="text"
+      formControlName="city"
+    />
+    <small
+      *ngIf="user.controls['city'].invalid && user.controls['city'].touched"
+      class="text-danger"
+      >Invalid town name.</small
+    >
+  </div>
+
+  <!-- COUNTRY -->
+  <div class="col-md-4">
+    <label for="ddlCountry" class="form-label">Country</label>
+    <select id="ddlCountry" class="form-select" formControlName="country">
+      <option value="" selected>Choose...</option>
+      <option *ngFor="let country of countries" value="country.code">
+        {{ country.name }}
+      </option>
+    </select>
+
+    <small
+      *ngIf="
+        user.controls['country'].invalid && user.controls['country'].touched
+      "
+      class="text-danger"
+      >Choose a country.</small
+    >
+  </div>
+
+  <!-- YEARS EXERCISING -->
+  <div class="col-md-3">
+    <label for="ddlYears" class="form-label">Years exercising</label>
+    <select
+      type="number"
+      class="form-select"
+      id="ddlYears"
+      formControlName="years"
+    >
+      <option value="" selected>Choose...</option>
+      <option value="None">I have never exercised</option>
+      <option value="Less than 1">Less than a year</option>
+      <option value="1-2">1 - 2 years</option>
+      <option value="2-5">2 - 5 years</option>
+      <option value="5-10">5 - 10 years</option>
+      <option value="More than 10">10+ years</option>
+    </select>
+
+    <small
+      *ngIf="user.controls['years'].invalid && user.controls['years'].touched"
+      class="text-danger"
+      >Choose one of the options.</small
+    >
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Subrscribe</button>
+  </div>
+</form>

@@ -1,1 +1,64 @@
-<p>product-page works!</p>
+<div *ngIf="product" class="container my-5">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <app-carousel [images]="product.images"></app-carousel>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <h2 class="fw-bold">{{ product.name }}</h2>
+      <hr />
+
+      <p>{{ product.description }}</p>
+      <small class="text-secondary"
+        >Production date: {{ product.productionDate }}</small
+      >
+      <h5
+        class="fs-2 mt-2"
+        [ngStyle]="{
+          'text-decoration':
+            product.discountPercent > 0 ? 'line-through' : 'none'
+        }"
+        [ngClass]="{
+          'text-secondary': product.discountPercent > 0,
+          'fw-bold': product.discountPercent === 0
+        }"
+      >
+        {{ product.price }} $
+      </h5>
+
+      <h5 *ngIf="product.discountPercent > 0" class="fw-bold fs-2 mt-2">
+        {{
+          Math.round(
+            (product.price - (product.price / 100) * product.discountPercent) *
+              100
+          ) / 100
+        }}
+        $
+      </h5>
+
+      <h6
+        class="mt-3 text-dark fs-6 rounded bg-warning-subtle py-2 px-3"
+        style="width: fit-content"
+      >
+        Free shipping: {{ product.freeShipping ? "Available" : "Unavailable" }}
+      </h6>
+
+      <button
+        type="button"
+        class="btn btn-primary mt-2"
+        (click)="onClick(product)"
+      >
+        Add To Cart
+      </button>
+
+      <div
+        *ngIf="isProductAdded"
+        class="alert alert-success mt-4 anmimated-alert"
+        role="alert"
+        style="width: fit-content"
+      >
+        Product added to cart!
+      </div>
+    </div>
+  </div>
+</div>

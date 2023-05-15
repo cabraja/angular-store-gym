@@ -1,0 +1,7 @@
+.fa-cart-shopping{
+    cursor: pointer;
+    transition: .3s;
+}
+.fa-cart-shopping:hover{
+    opacity: 0.5;
+}

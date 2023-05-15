@@ -1,0 +1,19 @@
+.cart-item{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-item:hover .cart-item-inner{
+    display: flex ;
+}
+
+.cart-item-inner{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(228, 87, 111, 0.336);
+    z-index: 3;
+    backdrop-filter: blur(3px) !important;
+}

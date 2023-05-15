@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
 import {Observable} from 'rxjs'
-import { Product } from '../interfaces/Product';
+import { Country } from '../interfaces/Country';
 
 const htttpOptions = {
   headers: new HttpHeaders({
@@ -13,15 +13,13 @@ const htttpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class CountryService {
 
-  apiUrl:string = 'assets/data/products.json';
+  apiUrl:string = 'assets/data/countries.json';
 
   constructor(private http:HttpClient) { }
 
-  getProducts():Observable<Product[]>{
-    return this.http.get<Product[]>(this.apiUrl);
+  getCountries():Observable<Country[]>{
+    return this.http.get<Country[]>(this.apiUrl);
   }
-
-
 }

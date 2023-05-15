@@ -10,3 +10,14 @@
 body{
     font-family: Main;
 }
+
+.carousel-control-next-icon{
+    background-color: black !important;
+    border-radius: 10px;
+    padding: 16px !important;
+}
+.carousel-control-prev-icon{
+    background-color: black !important;
+    border-radius: 10px;
+    padding: 16px !important;
+}
